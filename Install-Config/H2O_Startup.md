@@ -82,11 +82,31 @@ would be possible on a single node.
 
   *IPv4:
 
-  <code># run two nodes on 108   
+  <pre><code># run two nodes on 108   
   10.10.65.108:54322   
-  10.10.65.108:54325</code>
+  10.10.65.108:54325</code></pre>
 
   *IPv6:
 
-  <code>0:0:0:0:0:0:0:1:54321   
-  0:0:0:0:0:0:0:1:54323</code>
+  <pre><code>0:0:0:0:0:0:0:1:54321   
+  0:0:0:0:0:0:0:1:54323</code></pre>
+  
+### 从Python启动
+Use the h2o.init() function to initialize H2O. This function accepts the following options. Note that in most cases, simply using h2o.init() is all that a user is required to do.
+
+ * url: Full URL of the server to connect to. (This can be used instead of ip + port + https.)
+ * ip: The ip address (or host name) of the server where H2O is running.
+ * port: Port number that H2O service is listening to.
+ * https: Set to True to connect via https:// instead of http://.
+ * insecure: When using https, setting this to True will disable SSL certificates verification.
+ * username: The username to log in with when using basic authentication.
+ * password: The password to log in with when using basic authentication.
+ * cookies: Cookie (or list of) to add to each request.
+ * proxy: The proxy server address.
+ * start_h2o: If False, do not attempt to start an H2O server when a connection to an existing one failed.
+ * nthreads: “Number of threads” option when launching a new H2O server.
+ * ice_root: The directory for temporary files for the new H2O server.
+ * enable_assertions: Enable assertions in Java for the new H2O server.
+ * max_mem_size: Maximum memory to use for the new H2O server.
+ * min_mem_size: Minimum memory to use for the new H2O server.
+ * strict_version_check: If True, an error will be raised if the client and server versions don’t match.
