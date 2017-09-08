@@ -15,8 +15,12 @@ Run the following commands in a Terminal window to install H2O for Python.
       $ cd Python-2.7.6
       $ sudo ./configure --prefix=/usr/local
       $ sudo make && sudo make altinstall</code></pre>
-  * 安装、升级PIP
-    <pre><code>yum -y install python-pip
+  * 安装、升级PIP  
+    * 安装epel扩展源  
+    EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL 及衍生发行版如 CentOS、Scientific Linux 等提供高质量软件包的项目
+    <pre><code>sudo yum -y install epel-release</code></pre>  
+    * 安装升级PIP  
+    <pre><code>yum -y install python-pip
     pip install --upgrade pip</code></pre>
   
 2. Install dependencies (prepending with sudo if needed):
