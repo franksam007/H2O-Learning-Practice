@@ -7,9 +7,9 @@ Run the following commands in a Terminal window to install H2O for Python.
     * 安装开发工具包  
       <code>yum groupinstall "Development tools"</code>
     * 安装其他依赖包  
-      <code>sudo yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel</code>
-    * 安装Python 2.7
-     <pre><code>$ cd /opt
+     <code>sudo yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel</code>
+    * 安装Python 2.7  
+     <pre><code>$ cd /opt
 $ sudo wget --no-check-certificate https://www.python.org/ftp/python/2.7.6/Python-2.7.6.tar.xz
 $ sudo tar xf Python-2.7.6.tar.xz 
 $ cd Python-2.7.6
