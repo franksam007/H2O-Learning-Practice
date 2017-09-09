@@ -31,18 +31,17 @@ Run the following commands in a Terminal window to install H2O for Python.
    pip install colorama
    pip install future</code></pre>
   
-  _Note_: These are the dependencies required to run H2O. A complete list of dependencies is maintained in the 
-  following file: https://github.com/h2oai/h2o-3/blob/master/h2o-py/conda/h2o/meta.yaml
+  _Note_: 完整的依赖包列表参见: https://github.com/h2oai/h2o-3/blob/master/h2o-py/conda/h2o/meta.yaml
 
 3. 删除以前安装的H2O的Python包  
   <code>pip uninstall h2o</code>
 
-4. Use pip to install this version of the H2O Python module.  
+4. 用PIP安装H2O的Python模块  
   <code>pip install -f http://h2o-release.s3.amazonaws.com/h2o/latest_stable_Py.html h2o</code>    
   或者直接安装本地已下载的包：  
   <code>pip install h2o-3.14.0.2-py2.py3-none-any.whl</code>     
   
-  _Note_: When installing H2O from pip in OS X El Capitan, users must include the --user flag. For example:   
+  _Note_: 如果在OS X El Capitan上安装H2O, 必须包括--user开关（用户模式安装）. 例如:   
   <code>pip install -f http://h2o-release.s3.amazonaws.com/h2o/latest_stable_Py.html h2o --user</code>
 
 5. （可选）在Python中启动h2o，运行一个DEMO，验证h2o是否工作.
