@@ -38,5 +38,5 @@
    2. 修改字段类型、DF的拼接和拆分会创建新的DF，即frame_id变化   
   
 * 一些限制
-  * H2OFrame不支持原地多字符字段的连接，执行后会把h2o的实例搞down
+   1. H2OFrame不支持原地多字符字段的连接，执行后会把h2o的实例搞down   
   <pre><code>df['new'] = df['c1'].ascharacter() + df['c2'].ascharacter()</code></pre>
